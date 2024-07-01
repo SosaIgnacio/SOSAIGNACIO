@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="/cargar.html">
+            <button>Nuevo turno</button>
+        </a>
+        <hr>
+        <div id="turnos">
+            <button onclick="MostrarTurnos()">Obtener los turnos</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>Titulo</th>
+                        <th>fecha</th>
+                        <th>Precio</th>
+                        <th>Precio Dolar</th>
+                    </tr>
+                </thead>
+                <tbody id="resultados"></tbody>
+            </table>
+            <div id="nuevoTurno" style="display: none">
+                <h1>Nuevo cliente</h1>
+                <form action="javascript:none">
+                    <input type="text" id="cliente" placeholder="Ingrese nombre del cliente">
+                    <br>
+                    <input type="date" id="fecha" placeholder="Dia en el que debe asistir el cliente">
+                    <br>
+                    <input type="number" id="precio" placeholder="Precio para este servicio:">
+                    <br>
+                    <button onclick="CrearNuevoTurno()">Nuevo turno</button>
+                </form>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

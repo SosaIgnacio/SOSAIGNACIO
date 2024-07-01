@@ -1,0 +1,11 @@
+body
+{
+    background-image: url('img/fondoOriginal.jpeg');
+    background-size: cover;
+}
+@media(max-width:800px){
+    #logo
+    {
+        display:block;
+    }
+}
